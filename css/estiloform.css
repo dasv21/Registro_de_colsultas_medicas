@@ -1,5 +1,7 @@
-body { color: #181B1B;
-       background-color: #DBF0F3}
-    input[type=number] {
-       width: 50px;
-    }
+body {
+  color: #181b1b;
+  background-color: #dbf0f3;
+}
+input[type="number"] {
+  width: 50px;
+}
