@@ -8,29 +8,31 @@ header("Content-type: application/vnd.ms-excel");
 header("Content-Disposition: attachment; filename=consultas'".$desd."'hasta'".$hast."'.xls");
 ?>
 <html>
-<head>
-<title>Reporte Excel</title>
-</head>
-<body>
-<table width='98%' border='0' cellspacing='0' cellpadding='0'>
-<tr>
 
-<td align='center'><strong>F Consulta </strong></td>
-<td align='center'><strong>ficha </strong></td>
-<td align='center'><strong>Nombre </strong></td>
-<td align='center'><strong>Apellido </strong></td>
-<td align='center'><strong>Edad </strong></td>
-<td align='center'><strong>Cedula </strong></td>
-<td align='center'><strong>F.Nacimiento </strong></td>
-<td align='center'><strong>Parentesco </strong></td>
-<td align='center'><strong>Sexo</strong> </td>
-<td align='center'><strong>Diagnostico </strong></td>
-<td align='center'><strong>Observacion </strong></td>
-<td align='center'><strong>T.Consulta </strong></td>
-<td align='center'><strong>Patologia </strong></td>
-<td align='center'><strong>Tipo Patologia </strong></td>
-</tr>
-<?php	
+<head>
+    <title>Reporte Excel</title>
+</head>
+
+<body>
+    <table width='98%' border='0' cellspacing='0' cellpadding='0'>
+        <tr>
+
+            <td align='center'><strong>F Consulta </strong></td>
+            <td align='center'><strong>ficha </strong></td>
+            <td align='center'><strong>Nombre </strong></td>
+            <td align='center'><strong>Apellido </strong></td>
+            <td align='center'><strong>Edad </strong></td>
+            <td align='center'><strong>Cedula </strong></td>
+            <td align='center'><strong>F.Nacimiento </strong></td>
+            <td align='center'><strong>Parentesco </strong></td>
+            <td align='center'><strong>Sexo</strong> </td>
+            <td align='center'><strong>Diagnostico </strong></td>
+            <td align='center'><strong>Observacion </strong></td>
+            <td align='center'><strong>T.Consulta </strong></td>
+            <td align='center'><strong>Patologia </strong></td>
+            <td align='center'><strong>Tipo Patologia </strong></td>
+        </tr>
+        <?php	
 require "../include/conexion.php";
    	
 	if(isset($_POST["filtrar"])){
@@ -86,5 +88,6 @@ if($boton=="filtrar"){
 			echo "</table>";
 	   
 			 }?>
-	</body>
+</body>
+
 </html>

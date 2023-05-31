@@ -3,61 +3,74 @@
     include("../include/javaestilo.php"); 
 	?>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Reporte Consulta Familiar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Reporte Consulta Familiar</title>
 </head>
 <link rel="stylesheet" href="../css/estiloform.css">
 <link rel="stylesheet" href="../js/jquery-ui-1.12.1.custom/jquery-ui.css" />
 <script language="javascript" src="../js/jquery-3.2.1.min.js"></script>
 <script language="javascript" src="../js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
 <body>
-<div align="center">
-<table  width="813">
- <div align="center">
-  <tr>
-    <td><img  src="../imagenes/cintillocemento.png" width="1000" height="44" alt=""/></td></tr>
-  <tr><td><?php include('../include/menu.php');?></td></tr>
-   </div>
-   </table>
-<form action="reportecfamiliar.php" method="post" name="form" id="formeda">
+    <div align="center">
+        <table width="813">
+            <div align="center">
+                <tr>
+                    <td><img src="../imagenes/cintillocemento.png" width="1000" height="44" alt="" /></td>
+                </tr>
+                <tr>
+                    <td><?php include('../include/menu.php');?></td>
+                </tr>
+            </div>
+        </table>
+        <form action="reportecfamiliar.php" method="post" name="form" id="formeda">
 
-  <table class="tabla">
-       <tr><td align="center"><strong>Buscar</strong></td><td></td>
-       <td> <input class="textbox" size="11" placeholder="DESDE..." name="fechad" id="fechad" value=""></td>
-       <td><input class="textbox" size="11" placeholder="HASTA..." name="fechah" id="fechah" value=""></td>
-    <td><button type="submit" name="filtrar" id="filtrar" title="Filtrar" value="filtrar" ><img src="../imagenes/bucar.png"width="30" height="30" id="filtrar" /></button></td>
-   </tr>
-   
-</table>
-<table>
-<tr><td><a href="reportecfamiliar.php" class="ui-button" title="Mostrar Todo">Mostrar Todo</a></td><td><a href="formexcelrcf.php" class="ui-button" title="Generar Archivo Excel">Generar Reportes</a></td></tr>
-</table>
-</form>
-<table width="98%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td class="tabla" ><strong>Reporte Consultas Familiares</strong></td>
-  </tr>
-  </table>
- <table width='98%' class='textbox' border='0' cellspacing='0' cellpadding='0'>
+            <table class="tabla">
+                <tr>
+                    <td align="center"><strong>Buscar</strong></td>
+                    <td></td>
+                    <td> <input class="textbox" size="11" placeholder="DESDE..." name="fechad" id="fechad" value="">
+                    </td>
+                    <td><input class="textbox" size="11" placeholder="HASTA..." name="fechah" id="fechah" value=""></td>
+                    <td><button type="submit" name="filtrar" id="filtrar" title="Filtrar" value="filtrar"><img
+                                src="../imagenes/bucar.png" width="30" height="30" id="filtrar" /></button></td>
+                </tr>
 
-<tr class='textbox'>
-<td ><strong>F.Consulta </strong></td>
-<td align='center'><strong>Nºficha </strong></td>
-<td align='center'><strong>Nombre </strong></td>
-<td align='center'><strong>Apellido </strong></td>
-<td align='center'><strong>Edad </strong></td>
-<td align='center'><strong>Cedula </strong></td>
-<td align='center'><strong>F.Nacimiento </strong></td>
-<td align='center'><strong>Parentesco </strong></td>
-<td align='center'><strong>Sexo</strong> </td>
-<td align='center'><strong>Diagnostico </strong></td>
-<td align='center'><strong>Observacion </strong></td>
-<td align='center'><strong>T.Consulta </strong></td>
-<td align='center'><strong>Patologia </strong></td>
-<td align='center'><strong>Tipo Patologia </strong></td>
-</tr>
-<?php	
+            </table>
+            <table>
+                <tr>
+                    <td><a href="reportecfamiliar.php" class="ui-button" title="Mostrar Todo">Mostrar Todo</a></td>
+                    <td><a href="formexcelrcf.php" class="ui-button" title="Generar Archivo Excel">Generar Reportes</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <table width="98%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="tabla"><strong>Reporte Consultas Familiares</strong></td>
+            </tr>
+        </table>
+        <table width='98%' class='textbox' border='0' cellspacing='0' cellpadding='0'>
+
+            <tr class='textbox'>
+                <td><strong>F.Consulta </strong></td>
+                <td align='center'><strong>Nºficha </strong></td>
+                <td align='center'><strong>Nombre </strong></td>
+                <td align='center'><strong>Apellido </strong></td>
+                <td align='center'><strong>Edad </strong></td>
+                <td align='center'><strong>Cedula </strong></td>
+                <td align='center'><strong>F.Nacimiento </strong></td>
+                <td align='center'><strong>Parentesco </strong></td>
+                <td align='center'><strong>Sexo</strong> </td>
+                <td align='center'><strong>Diagnostico </strong></td>
+                <td align='center'><strong>Observacion </strong></td>
+                <td align='center'><strong>T.Consulta </strong></td>
+                <td align='center'><strong>Patologia </strong></td>
+                <td align='center'><strong>Tipo Patologia </strong></td>
+            </tr>
+            <?php	
 	$desd=$_POST["fechad"];
 	$desde = implode( '-', array_reverse( explode( '-', $desd ) ) ) ;
 	$hast=$_POST["fechah"];
@@ -170,14 +183,17 @@ if($boton=="filtrar"){
 			}
 			echo "</table>";
 	}?>
-<footer>
-<div class="contenedor">
-<p class="copy">
-<strong>
-<p><em>Cemento Andino S.A <br>Gerencia de Tecnologia &copy; 2017<br>DESARROLLADO POR:<br>David Santiago
-</em></p>
-</strong></p>
-</div>
-</footer>
+            <footer>
+                <div class="contenedor">
+                    <p class="copy">
+                        <strong>
+                            <p><em>Cemento Andino S.A <br>Gerencia de Tecnologia &copy; 2017<br>DESARROLLADO
+                                    POR:<br>David Santiago
+                                </em></p>
+                        </strong>
+                    </p>
+                </div>
+            </footer>
 </body>
+
 </html>
