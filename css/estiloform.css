@@ -1,0 +1,5 @@
+body { color: #181B1B;
+       background-color: #DBF0F3}
+    input[type=number] {
+       width: 50px;
+    }
