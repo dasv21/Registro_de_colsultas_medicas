@@ -23,4 +23,4 @@ Si te gustaría colaborar con el proyecto, clona este repositorio y envía propu
 
 ## Nota importante
 
-Este registro de consultas de servicios médicos fue creado por mi en mis inicios de aprendizaje, es por eso que en el código encontrarás algunos errores y puede no ser tan eficiente como debería. Sin embargo, considero que es un buen ejemplo de mi progreso como desarrollador y estoy orgulloso de haberlo creado. ¡Espero que pueda ser útil para ti!
+Este registro de consultas de servicios médicos fue creado por mi en mis inicios, es por eso que en el código encontrarás algunos errores y puede no ser tan eficiente como debería. Sin embargo, considero que es un buen ejemplo de mi progreso como desarrollador y estoy orgulloso de haberlo creado. ¡Espero que pueda ser útil para ti!
