@@ -2,10 +2,6 @@
 
 Este repositorio contiene un proyecto en PHP, HTML y CSS que he creado en mis primeros años de aprendizaje y tiene errores. Aun así, lo subo con la esperanza de que pueda ser útil para otros principiantes o desarrolladores que desean contribuir o aprender cómo construir un registro de consultas de servicios médicos, tambien lo estare modificando en mis tiempos libres para hacerlo funcional sin olvidar las bases que a pesar que tiene muchos errores fueron mis inicios.
 
-## Como ver los cambios
-
-Tienes que dirigirte a las diferentes ramas del repositorio para ver los cambios en el codigo en la rama develop se estan implementando todos los cambios y dicha rama tiene features en los cuales se esta trabajando.
-
 ## Cómo usar
 
 1. Clona el repositorio o descarga los archivos en una carpeta de tu equipo.
