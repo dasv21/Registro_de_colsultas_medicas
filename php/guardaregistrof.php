@@ -1,18 +1,23 @@
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Reporte Consulta Familiar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Reporte Consulta Familiar</title>
 </head>
 <link rel="stylesheet" href="../css/estiloform.css">
+
 <body>
-<div align="center">
-<table  width="813">
- <div align="center">
-  <tr>
-    <td><img  src="../imagenes/cintillocemento.png" width="1000" height="44" alt=""/></td></tr>
-  <tr><td><?php include('../include/menu.php');?></td></tr>
-   </div>
-<?php
+    <div align="center">
+        <table width="813">
+            <div align="center">
+                <tr>
+                    <td><img src="../imagenes/cintillocemento.png" width="1000" height="44" alt="" /></td>
+                </tr>
+                <tr>
+                    <td><?php include('../include/menu.php');?></td>
+                </tr>
+            </div>
+            <?php
 $nombrev=$_POST["nombref"];	
 if(isset($_POST["Guardar"])){
 $boton=$_POST["Guardar"];
@@ -45,35 +50,38 @@ $sql="insert into registro_familiar ($intro) values ($values)"or die(mysql_error
 
 $result=mysqli_query($mysqli,$sql);
 
-?>	
+?>
 
-<script language="javascript">
-alert(" La Consulta a sido Registrada con exito");
-window.location.href='../php/registrocfamiliar.php';
-</script>
+            <script language="javascript">
+            alert(" La Consulta a sido Registrada con exito");
+            window.location.href = '../php/registrocfamiliar.php';
+            </script>
 
-<?php
+            <?php
 }else{
 ?>
-<script language="javascript">
-alert("Error al Guardar los Datos");
-history.back();
-</script>
+            <script language="javascript">
+            alert("Error al Guardar los Datos");
+            history.back();
+            </script>
 
-<?php
+            <?php
 }
 
 }
 
 ?>
-<footer>
-<div class="contenedor">
-<p class="copy">
-<strong>
-<p><em>Cemento Andino S.A <br>Gerencia de Tecnologia &copy; 2017<br>DESARROLLADO POR:<br>David Santiago
-</em></p>
-</strong></p>
-</div>
-</footer>
+            <footer>
+                <div class="contenedor">
+                    <p class="copy">
+                        <strong>
+                            <p><em>Cemento Andino S.A <br>Gerencia de Tecnologia &copy; 2017<br>DESARROLLADO
+                                    POR:<br>David Santiago
+                                </em></p>
+                        </strong>
+                    </p>
+                </div>
+            </footer>
 </body>
+
 </html>
