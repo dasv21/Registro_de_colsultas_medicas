@@ -11,7 +11,7 @@ Este repositorio contiene un proyecto en PHP, HTML y CSS que he creado en mis pr
 
 ## Tecnologías utilizadas
 
-Este proyecto utiliza principalmente PHP,JavaScript HTML y CSS. Siéntete libre de agregar nuevas tecnologías y mejorar el proyecto.
+Este proyecto utiliza principalmente PHP, JavaScript, HTML y CSS. Siéntete libre de agregar nuevas tecnologías y mejorar el proyecto.
 
 ## Contribuir
 
